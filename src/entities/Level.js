@@ -14,7 +14,7 @@ export class Level {
 
   }
 
-  async loadHouse(path = "./assets/models/house.glb") {
+  async loadHouse(path = "assets/models/house.glb") {
     const gltf = await loadGLB(path);
     this.root = gltf.scene;
 

@@ -501,7 +501,7 @@ export class Game {
     });
 
     // load house
-    const { spawn } = await this.level.loadHouse("./assets/models/House.glb");
+    const { spawn } = await this.level.loadHouse("assets/models/house.glb");
     const monsterRoot = await this.loadMonster();
     this.seekerAI = new SeekerAI(
       this.scene,
@@ -673,7 +673,7 @@ endGame(result) {
   }
   async loadMonster() {
     const { loadGLB } = await import("./core/GLTFLoader.js");
-    const gltf = await loadGLB("./assets/models/monster.glb");
+    const gltf = await loadGLB("assets/models/monster.glb");
 
     this.monster = gltf.scene;
     this.scene.add(this.monster);
@@ -1732,7 +1732,7 @@ adjustFlashlightAxis(dir, isRotation) {
   async loadFlashlight() {
     const { GLTFLoader } = await import("three/addons/loaders/GLTFLoader.js");
     const loader = new GLTFLoader();
-    const gltf = await loader.loadAsync("./assets/models/flashlight.glb");
+    const gltf = await loader.loadAsync("assets/models/flashlight.glb");
 
     this.flashlight = gltf.scene;
     this.flashlight.layers.set(this.WEAPON_LAYER);

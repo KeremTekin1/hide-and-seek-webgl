@@ -28,7 +28,7 @@ export class Monster {
 
             // Load Model (Using the smart loader)
             const loader = new GLTFLoader(this.gl);
-            const meshData = await loader.load('./assets/models/monster.glb');
+            const meshData = await loader.load('assets/models/monster.glb');
             
             // Load Texture
             await this.loadTexture('./assets/textures/monster_diffuse.png');
