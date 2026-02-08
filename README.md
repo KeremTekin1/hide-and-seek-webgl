@@ -2,6 +2,9 @@
 
 A browser-based 3D hide and seek game developed as an academic team project.
 
+## 🎮 Live Demo
+👉 https://keremtekin1.github.io/hide-and-seek-webgl/
+
 ## 🎮 Project Overview
 This project is a simple 3D hide and seek game implemented using WebGL, JavaScript, and HTML.  
 It focuses on core game development concepts such as rendering, player control, basic AI, and scene management.
